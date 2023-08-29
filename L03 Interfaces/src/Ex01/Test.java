@@ -67,9 +67,9 @@ public class Test {
     }
 
     public static Measurable[] blackFridayMeal(Measurable[] chilies, Measurable[] beers) {
-        Measurable[] returnArray = new Measurable[2];
-        returnArray[0] = max(chilies);
-        returnArray[1] = max(beers);
-        return returnArray;
+        Measurable[] arr = new Measurable[2];
+        arr[0] = max(chilies);
+        arr[1] = max(beers);
+        return arr;
     }
 }
