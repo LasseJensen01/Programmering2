@@ -29,6 +29,7 @@ public class Test {
         udskriv += " og " + blackFridayMeal(chilier, øller)[1].toString();
         System.out.println(udskriv);
     }
+
     public static double average(Measurable[] objects, Filter filter) {
         double sum = 0;
         int count = 0;
