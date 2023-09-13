@@ -29,7 +29,7 @@ public class Ex03 {
 
         ArrayList<Integer> temp = new ArrayList<>();
 
-        while (i1 < m && i2 < h){
+        while (i1 <= m && i2 <= h){
             if (list.get(i1) <= list.get(i2)){
                 temp.add(list.get(i1));
                 i1++;
@@ -38,11 +38,11 @@ public class Ex03 {
                 i2++;
             }
         }
-        while(i1 < m){
+        while(i1 <= m){
             temp.add(list.get(i1));
             i1++;
         }
-        while(i2 < h){
+        while(i2 <= h){
             temp.add(list.get(i2));
             i2++;
         }
