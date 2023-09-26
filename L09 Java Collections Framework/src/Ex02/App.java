@@ -12,12 +12,18 @@ public class App {
         createStudent("John Lennon");
         createStudent("Sophie Turner");
         col1.gibThemGrades();
+
+        for (Student s : col1.getStudents().values()){
+            System.out.printf("%-20s %-40s%n", s.getName(), s.getGrades());
+        }
+        /*
         System.out.println(col1.findStudent(1001).getGrades());
         System.out.println(col1.findStudent(1002).getGrades());
         System.out.println(col1.findStudent(1003).getGrades());
         System.out.println(col1.findStudent(1004).getGrades());
+
+         */
         System.out.println(col1.calcAverage());
-        System.out.println(col1.getStudents());
 
     }
 

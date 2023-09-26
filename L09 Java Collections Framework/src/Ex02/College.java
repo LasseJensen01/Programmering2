@@ -36,16 +36,6 @@ public class College {
     });
         return sum[0] / count[0];
     }
-    private double fuckingHelper(Student s){
-        double sum = 0;
-        int count = 0;
-        List<Integer> temp = new ArrayList<>(s.getGrades());
-        for (Integer i : temp){
-            sum += i;
-            count++;
-        }
-        return sum / count;
-    }
     public Student findStudent(int studentNo){
         Student[] fuck = new Student[1];
         students.entrySet().forEach(s -> {
