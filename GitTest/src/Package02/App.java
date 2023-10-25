@@ -7,14 +7,18 @@ public class App {
     public static void main(String[] args) throws InterruptedException {
         LocalTime time = LocalTime.now();
         time.plusSeconds(1);
-        while (true){
-            String tim = time.toString();
-            int index = tim.lastIndexOf('.');
-            tim = tim.substring(0,index);
-            System.out.println(tim);
-            time = time.plusSeconds(1);
+        while(true) {
+            System.out.println(LocalTime.now().toString());
             TimeUnit.SECONDS.sleep(1);
-
         }
+        //while (true){
+        //    String tim = time.toString();
+        //    int index = tim.lastIndexOf('.');
+        //    tim = tim.substring(0,index);
+        //    System.out.println(tim);
+        //    time = time.plusSeconds(1);
+        //    TimeUnit.SECONDS.sleep(1);
+//
+        //}
     }
 }
