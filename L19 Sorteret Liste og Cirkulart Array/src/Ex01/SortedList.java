@@ -23,11 +23,24 @@ public class SortedList<E extends Comparable<E>> implements SortedList23Y<E>{
 
     @Override
     public boolean removeFirst() {
-        return false;
+        try{
+            head = head.next;
+            return true;
+        }catch (Exception e){
+            System.err.println("Error during removeFirst() function: " + e.getMessage());
+            return false;
+        }
     }
 
     @Override
     public boolean removeLast() {
+        Node<E> index = head;
+        if(index == null){
+            return false;
+        }
+        while (index.next != null){
+            index = index.next;
+        }
         return false;
     }
 
