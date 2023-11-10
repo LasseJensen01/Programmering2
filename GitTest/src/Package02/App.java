@@ -1,6 +1,8 @@
 package Package02;
 
 import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.concurrent.TimeUnit;
 
 public class App {
@@ -11,14 +13,8 @@ public class App {
             System.out.println(LocalTime.now().toString());
             TimeUnit.SECONDS.sleep(1);
         }
-        //while (true){
-        //    String tim = time.toString();
-        //    int index = tim.lastIndexOf('.');
-        //    tim = tim.substring(0,index);
-        //    System.out.println(tim);
-        //    time = time.plusSeconds(1);
-        //    TimeUnit.SECONDS.sleep(1);
-//
-        //}
+    }
+    public static void anders(){
+        ArrayList<Integer> fuck = new ArrayList<>();
     }
 }

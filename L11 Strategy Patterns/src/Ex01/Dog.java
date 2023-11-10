@@ -6,6 +6,10 @@ public abstract class Dog {
     public void bark(){
         System.out.println("Not barking");
     }
+
+    /**
+     * Makes a noise for your doggo
+     */
     public void eat(){
         System.out.println("No eating");
     }

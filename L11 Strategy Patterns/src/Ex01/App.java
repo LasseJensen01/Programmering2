@@ -6,5 +6,6 @@ public class App {
         Dog labrador = new Labrador(new PlayfullBark(), new NormalDiet());
         labrador.bark();
         labrador.eat();
+        labrador.eat();
     }
 }
