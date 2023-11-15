@@ -1,4 +1,4 @@
-package Ex01;
+package Ex02;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -7,7 +7,7 @@ import java.io.ObjectOutputStream;
 
 public class App {
     public static MyTime mt;
-    public static String path = "L20 Arkitektur og Serializable\\src\\Ex01\\MyData.ser";
+    public static String path = "L20 Arkitektur og Serializable\\src\\Ex02\\MyData.ser";
     public static void main(String[] args) {
         mt = readFile();
         if (mt == null) {
